@@ -49,16 +49,20 @@
 }
 .primary{
     width: 100%;
-    background-color: rgb(241, 241, 241);
+    background-color: F9F9F9;
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .primaryS{
     background-color: rgb(194, 194, 194);
-    text-align: center;
-    
+    height: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
 }
+
 
 
 
