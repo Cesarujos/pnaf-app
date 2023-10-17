@@ -60,20 +60,19 @@
     align-items: center;
     cursor: pointer;
     text-align: center;
-    border: 1px solid white;
 }
 .primaryS{
     height: 100%;
     display: flex;
     align-items: center ;
     justify-content: center;
-    border: 1px solid white;
 }
 .propiedades-container{
     height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all 0.5s cubic-bezier(.30, 1, .25, 1);
+    position: relative;
 }
 
 /* image_header-container */
@@ -82,6 +81,13 @@
     height: auto;
     width: calc(100% - 10px);
     opacity: 1;
+}
+.nameContainer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 0;
 }
 .text_header_2{
     display: none;
@@ -104,6 +110,13 @@
       font-size: 0.6rem;
     }
   }
+.buttonClosePropiedades{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
 
 
 

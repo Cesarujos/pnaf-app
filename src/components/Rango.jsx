@@ -5,8 +5,8 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function Rango(props) {
-    const colors = ['#F9F9F9', '#E1F6FF', '#FFC300', '#E2FFE3', '#DAF7A6', '#FF5733'];
-    const colors2 = ["#FFD3E0", "#FFECB3", "#B2DFDB", "#E1BEE7", "#BBDEFB", "#FFCC80", "#FFF59D", "#CFD8DC", "#EEEEEE", "#FFCDD2"];
+    const colors2 = ["#89CFF0", "#B3E0F2", "#A5A5A5", "#D1C4E9", "#FFD3C8", "#FFF2CC", "#DAC1E0", "#B2F7EF", "#D4C2D9", "#C59EC9"];
+    const colors = colors2
 
     //Hacer click
     function handleAccordionClick() {
@@ -17,6 +17,11 @@ function Rango(props) {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    //Close propiedades
+    function ClosePropiedades(){
+        props.onToggle(-1)
+    }
 
     return (
         <div className={`accordion_item ${props.isOpen ? 'accordion_item_2' : ''}`}>
@@ -33,11 +38,15 @@ function Rango(props) {
                 </div>
             </div>
             <div className={`propiedades-container ${props.isOpen ? 'propiedades-container_2' : ''}`}>
+                <div className='nameContainer' style={{backgroundColor: props.color}}>{props.data[0]}</div>
+                <div className="buttonClosePropiedades" onClick={ClosePropiedades}>
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
                 {props.datos.map((propiedad, index) => (
-                    <div key={index} className='primary' style={{ height: `${Math.log10(propiedad.final - propiedad.inicio) * 15 + 10}px`, backgroundColor: `${colors[index]}` }}onClick={handleShow}>
+                    <div key={index} className='primary' style={{ height: `${Math.log10(propiedad.final - propiedad.inicio) * 15 + 10}px`, backgroundColor: `${colors[index]}` }} onClick={handleShow}>
                         {propiedad.Sprimario.length >= 2 ? (
                             propiedad.Sprimario.map((valor, subindex) => (
-                                <div key={subindex} className='primaryS' style={{ width: `calc(100% / ${propiedad.Sprimario.length})`, backgroundColor: `${colors2[subindex]}`}}>{valor}</div>
+                                <div key={subindex} className='primaryS' style={{ width: `calc(100% / ${propiedad.Sprimario.length})`, backgroundColor: `${colors2[subindex]}` }}>{valor}</div>
                             ))
                         ) : (
                             propiedad.Sprimario[0]

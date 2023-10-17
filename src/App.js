@@ -6,8 +6,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import Rango from './components/Rango';
 
-import Flotante from './components/Flotante';
-
 function App() {
   const componentData = [
     {
