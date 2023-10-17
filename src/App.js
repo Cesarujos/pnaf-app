@@ -132,7 +132,6 @@ function App() {
               datos={data.propiedades}
             />
           ))}
-          <Flotante valor="Hola" />
         </div>
       </div>
     </div>

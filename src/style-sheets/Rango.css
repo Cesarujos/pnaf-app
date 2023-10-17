@@ -99,6 +99,12 @@
     height: auto;
 }
 
+@media (max-width: 580px) {
+    .primary {
+      font-size: 0.6rem;
+    }
+  }
+
 
 
 
