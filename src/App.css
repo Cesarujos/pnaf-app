@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
   margin: 0;
@@ -11,9 +11,9 @@ html, body{
 }
 h1{
   line-height: 2.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem !important;
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 700 !important
 }
 .description-pnf{
   font-family: 'Roboto', sans-serif;
@@ -24,17 +24,10 @@ h1{
   justify-content: center;
   align-items: center;
 }
-
-.acordeon-container{
-  width: 50%;
-}
-
-.max-width-72rem{
-  max-width: 72rem;
+.container-pnaf{
+  width: 100%;
 }
 .container-df{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(200px, auto);
+  width: 100%;
+  padding: 10px;
 }

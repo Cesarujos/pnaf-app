@@ -1,0 +1,67 @@
+.accordion_item{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+.accordion_header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+}
+.frecuencia{
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.name-frecuencia-english{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.name-frecuencia-espanish{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.image_header-container{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.imagen-header{
+    height: 100px;
+    width: 100%;
+    object-position: 0 5px;
+    transition: all 0.5s ease-in-out;
+}
+.text_header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.image_header-container:hover{
+    cursor: pointer;
+}
+
+.image_header-container:hover .imagen-header {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+.primary{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.primaryS{
+    background-color: rgb(194, 194, 194);
+    text-align: center;
+    
+}
+
+
+
+
+
+
