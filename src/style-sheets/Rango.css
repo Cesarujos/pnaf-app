@@ -55,19 +55,19 @@
 }
 .primary{
     width: 100%;
-    background-color: F9F9F9;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     text-align: center;
+    border: 1px solid white;
 }
 .primaryS{
-    background-color: rgb(194, 194, 194);
     height: 100%;
     display: flex;
     align-items: center ;
     justify-content: center;
+    border: 1px solid white;
 }
 .propiedades-container{
     height: 0;
