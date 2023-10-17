@@ -1,0 +1,58 @@
+[
+    {
+        inicio: 20050,
+        final: 70000,
+        Sprimario: ["Fijo", "M\u00f3vil Mar\u00edtimo"]
+    },
+    {
+        inicio: 70000,
+        final: 90000,
+        Sprimario: ["Fijo", "M\u00f3vil Mar\u00edtimo", "Radionavegaci\u00f3n Mar\u00edtima", "Radiolocalizaci\u00f3n"]
+    },
+    {
+        inicio: 90000,
+        final: 110000,
+        Sprimario: ["Radionavegaci\u00f3n", "Fijo"]
+    },
+    {
+        inicio: 110000,
+        final: 130000,
+        Sprimario: ["Fijo","M\u00f3vil Mar\u00edtimo","Radionavegaci\u00f3n Mar\u00edtima","Radiolocalizaci\u00f3n"]
+    },
+    {
+        inicio: 130000,
+        final: 160000,
+        Sprimario: ["Fijo","M\u00f3vil Mar\u00edtimo","P3"]
+    },
+    {
+        inicio: 160000,
+        final: 190000,
+        Sprimario: "Fijo",
+    },
+    {
+        inicio: 190000,
+        final: 200000,
+        Sprimario: ["Radionavegaci\u00f3n Aeron\u00e1utica"]
+    },
+    {
+        inicio: 200000,
+        final: 275000,
+        Sprimario: ["Radionavegaci\u00f3n Aeron\u00e1utica"]
+    },
+    {
+        inicio: 275000,
+        final: 285000,
+        Sprimario: ["Radionavegaci\u00f3n Aeron\u00e1utica","M\u00f3vil aeron\u00e1utico","Radionavegaci\u00f3n mar\u00edtima (radiofaros)"]
+    },
+    {
+        inicio: 285000,
+        final: 315000,
+        Sprimario: ["Radionavegaci\u00f3n mar\u00edtima (radiofaros)","Radionavegaci\u00f3n aeron\u00e1utica","P4"]
+    }
+]
+<Rango color={rangoVLF.color} imagen={rangoVLF.imagen}
+            data={rangoVLF.title}
+            datos={rangoVLF.propiedades} />
+          <Rango color={rangoLF.color} imagen={rangoLF.imagen}
+            data={rangoLF.title}
+            datos={rangoLF.propiedades} />
