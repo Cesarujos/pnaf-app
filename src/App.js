@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import Rango from './components/Rango';
 
-
+import Flotante from './components/Flotante';
 
 function App() {
   const componentData = [
@@ -113,7 +113,7 @@ function App() {
       setOpenComponentIndex(index);
     }
   }
-  
+
   return (
     <div className="App">
       <div className="container-pnaf p-3">
@@ -132,6 +132,7 @@ function App() {
               datos={data.propiedades}
             />
           ))}
+          <Flotante valor="Hola" />
         </div>
       </div>
     </div>
