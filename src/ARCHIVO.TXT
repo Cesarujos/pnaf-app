@@ -1,0 +1,12 @@
+{componentData.map((data, index) => (
+            <Rango
+              key={index}
+              index={index}
+              onToggle={handleComponentToggle}
+              isOpen={index === openComponentIndex}
+              color={data.color}
+              imagen={data.imagen}
+              data={data.title}
+              datos={data.propiedades}
+            />
+          ))}

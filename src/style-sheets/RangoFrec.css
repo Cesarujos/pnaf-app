@@ -1,0 +1,83 @@
+.accordion_header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: all 0.5s cubic-bezier(.30, 1, .25, 1);
+}
+
+.imagen-header_container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.frecuencia {
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.name-frecuencia-english {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.name-frecuencia-espanish {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.text_header-container {
+    display: grid;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
+.row-propiedades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.unique-propiedad {
+    width: 100%;
+}
+
+.accordion-collapse .accordion-body {
+    padding: 0;
+}
+
+.propiedad {
+    display: grid;
+    align-items: center;
+    border: 1px solid rgb(180, 180, 180);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.propiedad .propiedad-text {
+    margin: 0;
+}
+
+@media (max-width: 620px) {
+    .propiedad-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .propiedad-text {
+        font-size: 11px;
+    }
+}
+@media (max-width: 440px) {
+    .propiedad-text {
+        font-size: 9px;
+    }
+}
