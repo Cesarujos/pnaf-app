@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./App.css";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Accordion from 'react-bootstrap/Accordion'
 
-import Rango from './components/Rango';
+import RangoFrecuencia from './components/RangoFrec';
 
 
 
 function App() {
   const componentData = [
     {
-      color: "#4CC9F0",
+      color: "#049DBF",
       imagen: "faro",
       title: ["VLF (3 kHz - 30 kHz)", 'Very Low Frequency', 'Frecuencia muy baja'],
       propiedades: [
@@ -43,7 +43,7 @@ function App() {
       ]
     },
     {
-      color: "#4895EF",
+      color: "#085CA6",
       imagen: "shipcontainer",
       title: ["LF (30 kHz - 300 kHz)", "Low Frequency", "Frecuencia baja"],
       propiedades: [
@@ -101,38 +101,23 @@ function App() {
     }
 
   ]
-
-  const [openComponentIndex, setOpenComponentIndex] = useState(-1);
-
-  function handleComponentToggle(index) {
-    if (openComponentIndex === index) {
-      // Si se hace clic en el componente ya abierto, ciérralo.
-      setOpenComponentIndex(-1);
-    } else {
-      // Si se hace clic en un componente diferente, ábrelo y cierra el componente previamente abierto.
-      setOpenComponentIndex(index);
-    }
-  }
   
   return (
     <div className="App">
       <div className="container-pnaf p-3">
         <h1 className="tiltle-pnf">Plan Nacional de Atribución de Frecuencias</h1>
         <p className="description-pnf">El PNAF contiene la distribución de frecuencias de los diferentes servicios de telecomunicaciones en el Perú, de tal forma que operen en bandas de frecuencias definidas previamente para cada uno de ellos, a fin de asegurar su operatividad y minimizar la probabilidad de interferencias.</p>
-        <div className='container-df'>
+        <Accordion className='container-df'>
           {componentData.map((data, index) => (
-            <Rango
-              key={index}
-              index={index}
-              onToggle={handleComponentToggle}
-              isOpen={index === openComponentIndex}
+            <RangoFrecuencia
+              keyE={index}
               color={data.color}
               imagen={data.imagen}
               data={data.title}
               datos={data.propiedades}
             />
           ))}
-        </div>
+        </Accordion>
       </div>
     </div>
   );

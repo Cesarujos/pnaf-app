@@ -2,8 +2,8 @@ import React from 'react';
 import '../style-sheets/Rango.css';
 
 function Rango(props) {
-    const colors = ['#F9F9F9', '#E1F6FF', '#FFC300', '#E2FFE3', '#DAF7A6', '#FF5733'];
-    const colors2 = ["#FFD3E0", "#FFECB3", "#B2DFDB", "#E1BEE7", "#BBDEFB", "#FFCC80", "#FFF59D", "#CFD8DC", "#EEEEEE", "#FFCDD2"];
+    const colors2 = ["#FFECB3", "#B2DFDB", "#E1BEE7", "#T1BEb7"];
+    const colors = colors2
 
 
     function handleAccordionClick() {
