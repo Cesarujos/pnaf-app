@@ -34,13 +34,15 @@ function RangoFrecuencia(props) {
         });
 
     }, []);
+
+    //Mostrar el modal
     const [modalData, setModalData] = useState({ nameData: null, inicio: null, final: null });
     const [show, setShow] = useState(false);
     const handleShow = (valor, inicio, final) => {
         setModalData({ valor, inicio, final });
         setShow(true);
     };
-
+    // Cerrar el modal
     const handleClose = () => setShow(false);
 
     return (
@@ -84,15 +86,15 @@ function RangoFrecuencia(props) {
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>
-                        <h1 className='titleModal'>{modalData.valor}</h1>
+                        <div style={{ width: "100%", textAlign: "center" }} className='titleModal'>{modalData.valor}</div>
+                        <div style={{ width: "100%", textAlign: "center" }} className='titleModal'>{`${modalData.inicio} - ${modalData.final} Hz`}</div>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                <p>Inicio: {modalData.inicio} - Final: {modalData.final} Hz</p>
                 <p>Aquí debería ir la descripción</p>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="primary" onClick={handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>

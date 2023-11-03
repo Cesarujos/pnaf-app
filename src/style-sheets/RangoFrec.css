@@ -16,6 +16,9 @@
     font-weight: 700;
     font-size: 0.8rem;
 }
+.propiedades-container{
+    overflow: hidden;
+}
 
 .name-frecuencia-english {
     font-weight: 400;
@@ -43,6 +46,7 @@
     cursor: pointer;
     text-align: center;
     border: 1px solid white;
+    gap: 1px;
 }
 
 .unique-propiedad {
@@ -58,8 +62,17 @@
     align-items: center;
     font-size: 15px;
     font-weight: 400;
+    border-radius: 8px;
+    transition: all 0.2s ease;
 }
 
+.propiedad:hover{
+    background-color: rgb(110, 0, 0) !important;
+    color: white;
+}
+.modal-title{
+    width: 100%;
+}
 .propiedad .propiedad-text {
     margin: 0;
 }
